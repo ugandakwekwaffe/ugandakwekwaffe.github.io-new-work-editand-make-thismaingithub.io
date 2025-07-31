@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Home | Uganda Kwe Kwaffe</title>
+  <meta name="description" content="Uganda Kwekwaffe Business And Cultural Forum. The World Heritage Week and the 9th Uganda Kwekawaffe Canadian Business Forum  • July 31st – Aug 4, 2026 • Bison Lodge, Edmonton....">
+    <meta name="keywords" content="Uganda Culture in Diaspora,Ugandans in Canada, 9th Uganda Kwekawaffe, 9th Uganda Kwekawaffe Canadian, world heritage week,Uganda kwekwaffe,Uganda Kwe Kwaffe,business forum Edmonton,UCD,UCD Chairman- Canada,Mr. Kassim Ssali,Kassim Ssali,+15879881614,Uganda,diaspora">
+    <meta name="author" content=" Hajji Cassim Ssali, E-TECH LTD _Websites Developers 0783101345">
+   
+            <!-- Stylesheets -->
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link href="settings.css" rel="stylesheet" type="text/css">
+      <!-- REVOLUTION SETTINGS STYLES -->
+      <link href="layers.css" rel="stylesheet" type="text/css">
+      <!-- REVOLUTION LAYERS STYLES -->
+      <link href="navigation.css" rel="stylesheet" type="text/css">
+      <!--Color Switcher Mockup-->
+      <!-- REVOLUTION NAVIGATION STYLES -->
+      <link rel="icon" href="cnx.png" type="image/x-icon">
+      <!--Color Switcher Mockup-->
+<link rel="stylesheet" href="style.css">
+
+<!-- Flaticon Uicons CDN -->
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<style>
+    :root {
+  --main-dark: #041f46;
+  --highlight:  dodgerblue;
+}
+
+
+/* Top Info Bar */
+.kwekwaffe-top-bar {
+  background-color: var(--main-dark);
+  color: #fff;
+  font-size: 2vmin;
+  padding: 10px 0;
+}
+
+.kwekwaffe-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kwekwaffe-top-info {
+  display: flex;
+  gap: 10px;
+}
+
+.kwekwaffe-top-info i {
+  margin-right: 6px;
+  color: var(--highlight);
+}
+
+.kwekwaffe-top-social {
+  display: flex;
+  gap: 15px;
+}
+
+.kwekwaffe-top-social a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Navigation Header */
+.kwekwaffe-header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 20;
+}
+
+.kwekwaffe-nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kwekwaffe-logo img {
+  height: 50px;
+}
+
+.kwekwaffe-main-nav {
+  flex-grow: 1;
+  margin-left: 5%;
+}
+
+.kwekwaffe-navigation {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.kwekwaffe-navigation li {
+  position: relative;
+}
+
+.kwekwaffe-link {
+  font-size: 2vmin;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #000;
+  text-decoration: none;
+  padding: 14px 10px;
+  transition: background 0.3s ease;
+}
+
+.kwekwaffe-navigation li:hover > .kwekwaffe-link {
+  background-color: #f0f0f0;
+}
+
+.kwekwaffe-navigation li.dropdown > .kwekwaffe-link::after {
+  content: " ▼";
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.kwekwaffe-dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(255,255,255,0.95);
+  backdrop-filter: blur(4px);
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.kwekwaffe-navigation li:hover > .kwekwaffe-dropdown {
+  display: block;
+}
+
+.kwekwaffe-dropdown li a {
+  padding: 10px;
+  color: #000;
+  white-space: nowrap;
+  display: block;
+}
+
+/* Hamburger Icon */
+.kwekwaffe-hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Mobile Drawer */
+.kwekwaffe-mobile-drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background-color: var(--main-dark);
+  color: #fff;
+  padding: 30px 20px;
+  transition: right 0.3s ease;
+  z-index: 10000;
+}
+
+.kwekwaffe-mobile-drawer.active {
+  right: 0;
+}
+
+.kwekwaffe-mobile-drawer ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+  /* Mobile Drawer */
+.kwekwaffe-mobile-drawer {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background-color: var(--main-dark);
+  color: #fff;
+  padding: 30px 20px;
+  transition: right 0.3s ease;
+  z-index: 10000;
+}
+
+.kwekwaffe-mobile-drawer.active {
+  right: 0;
+}
+
+.kwekwaffe-mobile-drawer ul {
+  list-style: none;
+  padding: 0;
+}
+    
+
+    
+    /* Hero Carousel */
+    .kwekwaffe-hero-carousel {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .kwekwaffe-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      z-index: 0;
+      transition: opacity 1.5s ease;
+      color: aliceblue;
+    }
+
+    .kwekwaffe-slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .kwekwaffe-slide video,
+    .kwekwaffe-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .kwekwaffe-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: rgba(0,0,0,0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      pointer-events: none;
+    }
+
+    .kwekwaffe-overlay h2 {
+      font-size: 2.6rem;
+      margin-bottom: 20px;
+      opacity: 0;
+    }
+
+    .kwekwaffe-overlay p {
+      font-size: 1.1rem;
+      max-width: 680px;
+      opacity: 0;
+    }
+
+    #kwekwaffe-animated-icons {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    @media (max-width: 600px) {
+      .kwekwaffe-overlay h2 { font-size: 1.8rem; }
+      .kwekwaffe-overlay p { font-size: 0.95rem; }
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Top Info Bar -->
+<div class="kwekwaffe-top-bar">
+      <div class="kwekwaffe-top-social" style="justify-content: center;">
+        <li ><a href="https://www.facebook.com/profile.php?id=100092477606472  "><span class="fab fa-facebook-f" ></span></a></li>
+                           <li><a href="https://twitter.com/Kwe_Kwaffe "><span class="fab fa-twitter"></span></a></li>
+                           <li><a href="https://www.linkedin.com/in/uganda-kwe-kwaffe-6982b2279/ "><span class="fab fa-linkedin"></span></a></li>
+                           <li><a href="https://youtube.com/@ugandakwekwaffe?si=Vn04qpk-MKXjxpg3"><span class="fab fa-youtube"></span></a></li>
+                        
+    </div>
+  <div class="kwekwaffe-container">
+    <div class="kwekwaffe-top-info">
+      <span><i class="fas fa-map-marker-alt"></i> 15015 106 Ave NW Edmoton AB T5P 4J1 Canada</span>
+      <span><i class="fas fa-clock"></i> Mon–Sat: 8am–5pm</span>
+      <span><i class="fas fa-envelope"></i><a href="mailto:info@ugandakwekwaffe.com"></a> info@ugandakwekwaffe.com</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- Header Navigation -->
+<header class="kwekwaffe-header">
+  <div class="kwekwaffe-nav-container">
+    <div class="kwekwaffe-logo">
+      <a href="https://ugandakwekwaffe.com"><img src="./gallery/cnx.png" alt="Logo"></a>
+    </div>
+    <nav class="kwekwaffe-main-nav">
+      <ul class="kwekwaffe-navigation">
+        <li class="dropdown">
+          <a href="#" class="kwekwaffe-link"><i class="fas fa-users"></i> About</a>
+          <ul class="kwekwaffe-dropdown">
+            <li><a href="https://ugandakwekwaffe.com/overview/" class="kwekwaffe-link">Overview</a></li>
+            <li><a href="https://ugandakwekwaffe.com/venue/" class="kwekwaffe-link">Venue</a></li>
+            <li><a href="https://ugandakwekwaffe.com/message/" class="kwekwaffe-link">Welcome Remarks</a></li>
+            <li><a href="https://ugandakwekwaffe.com/staff/" class="kwekwaffe-link">Our Team</a></li>
+            <li><a href="https://speakers.ugandakwekwaffe.com" class="kwekwaffe-link">Speakers</a></li>
+          </ul>
+        </li>
+        <li><a href="https://prices.ugandakwekwaffe.com/" class="kwekwaffe-link"><i class="fas fa-tags"></i> Pricing</a></li>
+        <li><a href="https://booking.ugandakwekwaffe.com" class="kwekwaffe-link"><i class="fas fa-calendar-check"></i> Book</a></li>
+        <li class="dropdown">
+          <a href="#" class="kwekwaffe-link"><i class="fas fa-photo-video"></i> Media</a>
+          <ul class="kwekwaffe-dropdown">
+            <li><a href="https://ugandakwekwaffe.com/news/" class="kwekwaffe-link">News</a></li>
+            <li><a href="https://ugandakwekwaffe.com/gallery/" class="kwekwaffe-link">Gallery</a></li>
+            <li><a href="https://ugandakwekwaffe.com/videos/" class="kwekwaffe-link">Videos</a></li>
+          </ul>
+        </li>
+        <li><a href="https://mail.ugandakwekwaffe.com" class="kwekwaffe-link"><i class="fas fa-envelope-open-text"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="kwekwaffe-hamburger" id="kwekwaffe-hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+ <!-- Hero Carousel -->
+  <div id="kwekwaffe-hero" class="kwekwaffe-hero-carousel"  >
+    <div class="kwekwaffe-slide active" data-title="Uganda Kwe Kwaffe Cultural and Business Forum" data-sub="The World Heritage Week and the 9th Uganda Kwe Kwaffe Canadian Business Forum • July 31st – Aug 4, 2026 • Bison Lodge, Edmonton">
+      <video src="./gallery/backvideo.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="kwekwaffe-slide" data-title="Kuno Kwekwaffe" data-sub="When heritage speaks, the world listens. Experience culture through action • July 31st – Aug 4, 2026 • Bison Lodge, Edmonton">
+      <img src="./gallery/mainbg1.jpg" alt="Cultural image">
+
+      
+    </div>
+    <div class="kwekwaffe-slide" data-title="Uganda Kwe Kwaffe" data-sub="Trade, tradition, and transformation in one gathering • July 31st – Aug 4, 2026 • Bison Lodge, Edmonton">
+      <img src="./gallery/Flyer.jpg" alt="Business image">
+    </div>
+
+    
+    <!-- Overlay Text -->
+    <div class="kwekwaffe-overlay">
+      <h2 id="kwekwaffe-title"></h2>
+      <p id="kwekwaffe-sub"></p>
+      <div id="kwekwaffe-animated-icons"></div>
+    </div>
+  </div>
+
+          <div class="btn-box">
+                              <a href="https://prices.ugandakwekwaffe.com/" class="theme-btn btn-style-one"><span class="btn-title">Book Ticket</span></a>
+                              <a href="https://youtu.be/rOPtvVsRcgc" class="theme-btn btn-style-two lightbox-image"><span class="btn-title">Video Overview</span></a>
+                           </div>
+                        </div>
+
+                     
+<!-- About Section -->
+
+<section class="about-section">
+   <div class="auto-container">
+     <div class="row">
+       <!-- Image Column -->
+       <div class="image-column col-lg-6 col-md-12 col-sm-12">
+         <div class="about-image-wrapper">
+            <figure class="image-3 wow zoomIn" data-wow-delay="900ms"><img src="./gallery/Flyer.jpg" alt=""/></figure>
+            <figure class="image-2 wow zoomIn" data-wow-delay="600ms"><img src="https://ugandakwekwaffe.com/overview" alt=""/></figure>
+            <figure class="image-1 wow zoomIn" data-wow-delay="300ms"><img src="./gallery/vector.png" alt=""/></figure>
+            <a href="https://youtu.be/6URN78RhU2U" class="lightbox-image play-btn wow zoomIn" data-wow-delay="1200ms"><span class="icon fa fa-play"></span></a>
+         </div>
+       </div>
+       <!-- Content Column -->
+       <div class="content-column col-lg-6 col-md-12 col-sm-12">
+         <div class="inner-column">
+            <div class="sec-title">
+              <span class="sub-title">About Us</span>
+              <h2>Get Details About the Festival</h2>
+              <span class="divider"></span>
+            </div>
+            
+            <p> Edmonton Heritage Festival is one of the largest multicultural event taking place every August it futures over 100 pavilions. The first kind of this forum in Canada was organized in Toronto hosted by Uganda Culture in 2018 with the Theme was ¨ Giving Back to the Society¨ The successful forum which brought together 1000 Diaspora Canadians over a two day period and has inspired the organizers to make it an annual event hence organizing the 2nd Convention, 3rd, 4th, 5th, 6th, 7th, the 8th and now the 9th Uganda Kwe Kwaffe Diaspora Canadian Business and Cultural Forum 2026 Edmonton.</p>
+            <div class="btn-box">
+              <a href="https://ugandakwekwaffe.com/overview/" class="theme-btn btn-style-one"><span class="btn-title">Read More</span></a>
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</section>
+<!-- End About Section -->
+
+         <!-- Feature Section -->
+         <section class="feature-section pt-0">
+            <div class="anim-icons full-width">
+               <span class="icon icon-circle-1 wow fadeIn animated" style="visibility: visible; animation-name: fa-spin;"></span>
+            </div>
+            <div class="auto-container">
+               <div class="sec-title text-center">
+                  <span class="sub-title">Conference Themes</span>
+                  <h6>Diaspora Participation in Entrepreneurship and development, Modern Agriculture Practice, Tourism and culture and Networking Partnerships for Socio-Economic Prosperity.” The Objectives of this annual event is to engage and rally participants and various institutions in achieving various specific objectives as outlined below:</h6>
+                  <span class="divider"></span>
+               </div>
+               <div class="row">
+                  <!--Feature Block-->
+                  
+                              <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/theme/Multicultural-festivals-H6SDW/"><img src="./gallery/22ddcb5f9141589b16b7526b39491bba.jpg" alt=""></a></figure>
+                        <h4>Multicultural festivals</h4>
+                        <p>The Multicultural Festival provides an opportunity for the wider community to ex..</p>
+                        <a href="https://ugandakwekwaffe.com/theme/Multicultural-festivals-H6SDW/" class="read-more">Read More</a>
+                     </div>
+                  </div>
+                                    <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/theme/Entrepreneurship-Development-KDthf/"><img src="./gallery/c0eda92839050e92ef20ded33ca4715e.jpg" alt=""></a></figure>
+                        <h4>Entrepreneurship Development</h4>
+                        <p>Enhancing the skillset and knowledge of entrepreneurs regarding the development,..</p>
+                        <a href="https://ugandakwekwaffe.com/theme/Entrepreneurship-Development-KDthf/" class="read-more">Read More</a>
+                     </div>
+                  </div>
+                                    <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/theme/Tourism-and-Culture-rjOwp/"><img src="./gallery/21c541e8c7f57037b31a5e4094b90d13.jpg" alt=""></a></figure>
+                        <h4>Tourism and Culture</h4>
+                        <p>Movements of persons for essentially cultural motivations such as study tours, v..</p>
+                        <a href="https://ugandakwekwaffe.com/theme/Tourism-and-Culture-rjOwp/" class="read-more">Read More</a>
+                     </div>
+                  </div>
+                                    <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/theme/Modern-Agriculture-Practices-yIKRk/"><img src="./gallery/6116f4f6cd85b0eebf96d7f63e898cb6.jpg" alt=""></a></figure>
+                        <h4>Modern Agriculture Practices</h4>
+                        <p>An evolving approach to agricultural innovations and farming practices that help..</p>
+                        <a href="https://ugandakwekwaffe.com/theme/Modern-Agriculture-Practices-yIKRk/" class="read-more">Read More</a>
+                     </div>
+                  </div>
+                                    <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/theme/Networking-bZhEp/"><img src="./gallery/02b81bc5b6db3acbaea0d19b3b681076.jpg" alt=""></a></figure>
+                        <h4>Networking</h4>
+                        <p>Establishing a mutually beneficial relationship with other business people and p..</p>
+                        <a href="https://ugandakwekwaffe.com/theme/Networking-bZhEp/" class="read-more">Read More</a>
+                     </div>
+                  </div>
+                                    <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/theme/Entertainment-cLt1U/"><img src="./gallery/d647a574039dc59c6b919980f4dc83a2.jpg" alt=""></a></figure>
+                        <h4>Entertainment</h4>
+                        <p>We will Create cultural exchange through home grown entertainment for the Canadi..</p>
+                        <a href="https://ugandakwekwaffe.com/theme/Entertainment-cLt1U/" class="read-more">Read More</a>
+                     </div>
+                  </div>
+                                 </div>
+            </div>
+         </section>
+         <!-- End Feature Section -->
+       
+         <!-- Fun Fact Section -->
+         <section class="fun-fact-section">
+            <div class="auto-container">
+               <div class="fact-counter">
+                  <div class="row clearfix">
+                     <!--Column-->
+                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+                        <div class="inner-box">
+                           <div class="count-box counted">
+                              <span class="icon bg-1"></span>
+                              <span class="count-text" data-speed="3000" data-stop="21">21</span>
+                           </div>
+                           <span class="counter-title">Key Note Speakers </span>
+                        </div>
+                     </div>
+                     <!--Column-->
+                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow zoomIn animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: zoomIn;">
+                        <div class="inner-box">
+                           <div class="count-box counted">
+                              <span class="icon bg-2"></span>
+                              <span class="count-text" data-speed="3000" data-stop="5">5</span>
+                           </div>
+                           <span class="counter-title">Conferences Held</span>
+                        </div>
+                     </div>
+                     <!--Column-->
+                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow zoomIn animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: zoomIn;">
+                        <div class="inner-box">
+                           <div class="count-box counted">
+                              <span class="icon bg-3"></span>
+                              <span class="count-text" data-speed="3000" data-stop="11">11</span>
+                           </div>
+                           <span class="counter-title">Conference Themes </span>
+                        </div>
+                     </div>
+                     <!--Column-->
+                     <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow zoomIn animated" data-wow-delay="900ms" style="visibility: visible; animation-delay: 900ms; animation-name: zoomIn;">
+                        <div class="inner-box">
+                           <div class="count-box counted">
+                              <span class="icon bg-4"></span>
+                              <span class="count-text" data-speed="3000" data-stop="6">6</span>
+                           </div>
+                           <span class="counter-title">Years Of Existance</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--End Fun Fact Section -->
+       
+         <!-- Speakers Section -->
+         <section class="speakers-section">
+            <div class="anim-icons full-width">
+               <span class="icon icon-dotted-circle"></span>
+            </div>
+            <div class="auto-container">
+               <div class="sec-title text-center">
+                  <span class="sub-title">Our SPEAKERS</span>
+                  <h2>Speakers Who Are Exparts <br>in Their Fields</h2>
+                  <span class="divider"></span>
+               </div>
+               <div class="row">
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/Father-Kiibi-rRaOo/"><img src="./gallery/162627855_129828982478619_8442975475072615613_n.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/Father-Kiibi-rRaOo/">Father Kiibi Deogratius Kateregga</a></h4>
+                           <span class="designation">Roman Catholic Priest</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/Dr-Muhammad-ei1oF/"><img src="./gallery/Musoke%20Muhmad.png" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/Dr-Muhammad-ei1oF/">Dr. Muhammad Kiggundu Musoke</a></h4>
+                           <span class="designation">Ugandan Physician and Politician</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/Hon-Martin-GbvfG/"><img src="./gallery/IMG-20240104-WA0097.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/Hon-Martin-GbvfG/">Hon. Martin Ssejemba</a></h4>
+                           <span class="designation">LCV Chairman Elect, Mpigi District</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/Prince-Kalifani-r2U2s/"><img src="./gallery/IMG-20240105-WA0122.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/Prince-Kalifani-r2U2s/">Prince Khalifani Lukanga Kakungulu</a></h4>
+                           <span class="designation">Prince Buganda Kingdom</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-LyXvC/"><img src="./gallery/Ruth%20AIsha.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-LyXvC/">Dr. Ruth Aisha Biyinzika Kasolo</a></h4>
+                           <span class="designation">Ugandan medical doctor, politician, and women's rights activist</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-y4m1J/"><img src="./gallery/b74dc31acce6a925176837ed83f345f7.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-y4m1J/">Hon. Hillary Kiyaga aka Dr. Hilderman</a></h4>
+                           <span class="designation">Ugandan Musician</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-d7zii/"><img src="./gallery/0fd80cdc2a1c8be4dcb62cf59e0f7986.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-d7zii/">Hon. Joyce Bagala Ntwa Ntwa</a></h4>
+                           <span class="designation">Woman MP Mityana</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-1v41D/"><img src="./gallery/Njagala%20Nga%20Bwendi%20-%20Mesach%20Semakula_1646905500%20(1).jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-1v41D/">Mr. Mesach Semakula</a></h4>
+                           <span class="designation">Ugandan Musician</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-GdL20/"><img src="./gallery/images%20(1).jpeg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-GdL20/">Muhamad Nsereko</a></h4>
+                           <span class="designation">Proffessional Lawyer</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-UX7I5/"><img src="./gallery/WhatsApp%20Image%202024-02-27%20at%2016.38.04_79c8e397.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-UX7I5/">Kaali Sarah Lukwago</a></h4>
+                           <span class="designation">Media Personality</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-Nw3R9/"><img src="./gallery/Fortunate.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-Nw3R9/">Hon Nantongo Fortunate</a></h4>
+                           <span class="designation">Woman MP Kyotera</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-aL8QP/"><img src="./gallery/8de6e07d7e632ba34d0ce65ccdd0ac29.png" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-aL8QP/">David Shepherd</a></h4>
+                           <span class="designation">Health Critic MLA for Edmonton-City Centre</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-oyx6o/"><img src="./gallery/9cb7b8627347575cc4d0ff22fe11b71d.jpeg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-oyx6o/">Maala Zaharah Luyirika</a></h4>
+                           <span class="designation">KCCA Authority Speaker</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-pZ0fY/"><img src="./gallery/2608e0f524dd6cb9ddf701958a994221.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-pZ0fY/">Kiese Mindana</a></h4>
+                           <span class="designation">Immigration Consultant</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-abJid/"><img src="./gallery/7d6cf0330ee8c929da9f2aa38cc7e49c.jpeg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-abJid/">Rashidah Namboowa</a></h4>
+                           <span class="designation">LC 5 Butambala</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-cYzrA/"><img src="./gallery/6eaf52af7459d85c5d8a9780d6fe74cf.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-cYzrA/">Thomas Adam Lukaszuk</a></h4>
+                           <span class="designation">Canadian politician</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-Y4nFA/"><img src="./gallery/5b58432cd9acbf9b8b329262f9f8b49a.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-Y4nFA/">Dr. Habiba Mohamud</a></h4>
+                           <span class="designation">Somali-American Physician and Public Health Expert</span>
+                        </div>
+                     </div>
+                  </div>
+                                    <!-- Speaker block -->
+                  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <figure class="image"><a href="https://speakers.ugandakwekwaffe.com/-hAhJu/"><img src="./gallery/52887dcd90cf1545930376c91bb0e12e.jpg" alt=""></a></figure>
+                           <span class="plus-icon fa fa-plus"></span>
+                           <div class="social-links">
+                              <a href="#"><i class="fab fa-dribbble"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="info-box">
+                           <h4 class="name"><a href="https://speakers.ugandakwekwaffe.com/-hAhJu/">Bashir Mayiga</a></h4>
+                           <span class="designation">Ugandan Farmer</span>
+                        </div>
+                     </div>
+                  </div>
+                                 </div>
+            </div>
+         </section>
+         <!-- End Speakers Section -->
+       
+        <!-- Call to Action -->
+         <section class="call-to-action" style="background-image: url(.gallery/1.jpg);">
+            <div class="anim-icons full-width">
+               <span class="icon icon-dotted-world left"></span>
+               <span class="icon icon-dotted-world right"></span>
+            </div>
+            <div class="auto-container">
+               <div class="content-box wow fadeInUp">
+                  <h2>Get Ticket Now! </h2>
+                  <span class="text">Take the early bird rate and register with us </span>
+                  <a href="https://prices.ugandakwekwaffe.com/" class="theme-btn btn-style-two"><span class="btn-title">Book Ticket</span></a>
+               </div>
+            </div>
+         </section>
+         <!-- End Call to Action -->
+       
+         <!-- Pricing Section Two-->
+         <section class="pricing-section-two">
+            <div class="auto-container">
+               <div class="sec-title text-center">
+                  <span class="sub-title">GET TICKET</span>
+                  <h2>Exhibitor Packages</h2>
+                  <span class="divider"></span>
+               </div>
+               <div class="row">
+                  <!-- Pricing block -->
+                  <div class="pricing-block-two col-lg-6 col-md-12 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="title-box">
+                           <span class="title">Premium Exhibitor</span>
+                           <h3>Standard Pass</h3>
+                        </div>
+                        <div class="price-box">
+                           <div class="price"><sup>$</sup>3000</div>
+                        </div>
+                        <ul class="features">
+                           <li>Sponsor Logo Added To All Event Sales Collateral And Marketing Material</li>
+                           <li>Logo, Company 100-Word Profile On The Conference Website</li>
+                           <li>Branding Of The Lunch/Dinner Area In The Duration Of The Event</li>
+                           <li>Complimentary Exhibition Space Within Event Networking Area</li>
+                        </ul>
+                        <div class="btn-box">
+                           <a href="https://ugandakwekwaffe.com/exhibitor/">
+                              <button class="theme-btn btn-style-one"><span class="btn-title">Register Now</span></button>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Pricing block -->
+                  <div class="pricing-block-two col-lg-6 col-md-12 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="title-box">
+                           <span class="title">Enterprise Exhibitor</span>
+                           <h3>Fabulously Pass</h3>
+                        </div>
+                        <div class="price-box">
+                           <div class="price"><sup>$</sup>1000</div>
+                        </div>
+                        <ul class="features">
+                           <li>Sponsor logo, on the Event brochure</li>
+                           <li>2 full conference passes included in this package</li>
+                           <li>Allocated an exhibition space, within event networking area</li>
+                           <li>Invitation letter and Package to facilitate Visa Application for Ugandan Exhibitors</li>
+                        </ul>
+                        <div class="btn-box">
+                           <a href="https://ugandakwekwaffe.com/exhibitor/">
+                              <button class="theme-btn btn-style-one"><span class="btn-title">Register Now</span></button>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Pricing Section -->
+         
+         <!-- Pricing Section Two-->
+         <section class="pricing-section-two">
+            <div class="auto-container">
+               <div class="sec-title text-center">
+                  <h2>Participant Packages</h2>
+                  <span class="divider"></span>
+               </div>
+               <div class="row">
+                  <!-- Pricing block -->
+                  <div class="pricing-block-two tagged col-lg-6 col-md-12 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="title-box">
+                           <span class="title">Canadian Residents</span>
+                           <h3>Standard Pass</h3>
+                        </div>
+                        <div class="price-box">
+                           <div class="price"><sup>$</sup>50</div>
+                        </div>
+                        <ul class="features">
+                           <li>2 days Forum passes to access all key note speakers and Exhibitors</li>
+                           <li>Access to Sponsored Dinner</li>
+                           <li>Access to Entertainment</li>
+                           <li>Accomodation</li>
+                        </ul>
+                        <div class="btn-box">
+                           <a href="https://ugandakwekwaffe.com/participant/">
+                              <button class="theme-btn btn-style-one"><span class="btn-title">Register Now</span></button>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Pricing block -->
+                  <div class="pricing-block-two tagged col-lg-6 col-md-12 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                     <div class="inner-box">
+                        <div class="title-box">
+                           <span class="title">International Residents</span>
+                           <h3>Fabulously Pass</h3>
+                        </div>
+                        <div class="price-box">
+                           <div class="price"><sup>$</sup>375</div>
+                        </div>
+                        <ul class="features">
+                           <li>Invitation letter and Package to facilitate Visa Application</li>
+                           <li>2 days Forum passes to access all key note speakers and Exhibitors</li>
+                           <li>Access to Sponsored Dinner</li>
+                           <li>Access to Entertainment</li>
+                           <li>Accomodation and airport transport</li>
+                        </ul>
+                        <div class="btn-box">
+                           <a href="https://ugandakwekwaffe.com/participant/">
+                              <button class="theme-btn btn-style-one"><span class="btn-title">Register Now</span></button>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Pricing Section -->
+         <!-- News Section -->
+         <section class="news-section">
+            <div class="auto-container">
+               <div class="sec-title">
+                  <span class="sub-title">News &amp; blogs</span>
+                  <h2>Latest From Newsroom</h2>
+                  <span class="divider"></span>
+               </div>
+               <div class="row">
+                  <!-- News Block -->
+                                    <div class="news-block col-lg-4 col-md-6 col-sm-12  data-wow-delay=" 200ms"="" wow="" fadeinright"="">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <span class="tag">Tourism and Travel</span>
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/news/Canada-Announces-Immigration-Levels-Plan-2024-2026-EHNzo/"><img src="./gallery/IMG-20240105-WA0134.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                           <div class="author">
+                              <figure class="thumb"><img src="./gallery/IMG-20240105-WA0134.jpg" alt=""></figure>
+                              <h5 class="name">Kassim Ssali</h5>
+                           </div>
+                           <h4><a href="https://ugandakwekwaffe.com/news/Canada-Announces-Immigration-Levels-Plan-2024-2026-EHNzo/">Canada Announces Immigration Levels Plan 2024-2026  </a></h4>
+                           <!--<div class="text"><p class="MsoNormal" style="text-align: justify; "><span lang="EN-CA" georgia",serif"="" style="line-height: 17.12px;">Canada's immigration levels will remain unchanged from its current targets. In 2024, the country will target the admission of 485,000 new immigrants. In 2026 and 2026, Canada will look to welcome 500,000 new immigrants each year.<o:p></o:p></span></p><p class="MsoNormal" style="text-align: justify;"><span lang="EN-CA" georgia",serif"="" style="line-height: 17.12px;">The targets are the same as those announced under the <a href="https://www.cicnews.com/2022/11/canada-immigration-levels-plan-2023-2026-1131587.html">Immigration Levels Plan 2023-2026</a>. The new information released today is the 2026 target, as well as updates to the levels of immigrants that will be admitted under each class and program between 2024-2026.<o:p></o:p></span></p><p style="text-align: justify; margin: 0in; line-height: 21px; vertical-align: baseline;"><span lang="EN-CA" georgia",serif;mso-bidi-font-family:arial;="" color:#242424;letter-spacing:-.7pt"=""> </span></p></div>-->
+                           <ul class="post-info">
+                              <li><span class="far fa-calendar"></span> 21/08/2021</li>
+                              <li><span class="far fa-comments"></span> 02 Comments</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                                    <div class="news-block col-lg-4 col-md-6 col-sm-12  data-wow-delay=" 400ms"="" wow="" fadeinright"="">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <span class="tag">Tourism and Travel</span>
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/news/Travelling-to-Canada-for-the-first-time-as-a-newcomer-Here-is-how-you-can-arrive-prepared-9MLTp/"><img src="./gallery/WhatsApp%20Image%202024-01-30%20at%2013.40.12_fe3ddf97.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                           <div class="author">
+                              <figure class="thumb"><img src="./gallery/WhatsApp%20Image%202024-01-30%20at%2013.40.12_fe3ddf97.jpg" alt=""></figure>
+                              <h5 class="name">KASSIM SSALI</h5>
+                           </div>
+                           <h4><a href="https://ugandakwekwaffe.com/news/Travelling-to-Canada-for-the-first-time-as-a-newcomer-Here-is-how-you-can-arrive-prepared-9MLTp/">Travelling to Canada for the first time as a newcomer? Here is how you can arrive prepared  </a></h4>
+                           <!--<div class="text">Whether you are coming to Canada as a permanent resident or with a work or study permit, there are certain obligations you must meet when landing in the country.
+All travellers to Canada need to show certain documents at their port of entry. These include a travel document (i.e. a passport) and a visa or electronic Travel Authorization (eTA) to verify and confirm a person’s status in Canada.</div>-->
+                           <ul class="post-info">
+                              <li><span class="far fa-calendar"></span> 21/08/2021</li>
+                              <li><span class="far fa-comments"></span> 02 Comments</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                                    <div class="news-block col-lg-4 col-md-6 col-sm-12  data-wow-delay=" 600ms"="" wow="" fadeinright"="">
+                     <div class="inner-box">
+                        <div class="image-box">
+                           <span class="tag">Business</span>
+                           <figure class="image"><a href="https://ugandakwekwaffe.com/news/Global-Diaspora-The-Power-of-Trade-Culture-and-Investment-in-Supporting-Economies-HrKAq/"><img src="./gallery/7ea52acd2157a8786f9d2e126f1852b9.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                           <div class="author">
+                              <figure class="thumb"><img src="./gallery/7ea52acd2157a8786f9d2e126f1852b9.jpg" alt=""></figure>
+                              <h5 class="name">Trevour</h5>
+                           </div>
+                           <h4><a href="https://ugandakwekwaffe.com/news/Global-Diaspora-The-Power-of-Trade-Culture-and-Investment-in-Supporting-Economies-HrKAq/">Global Diaspora: The Power of Trade, Culture, and Investment in Supporting Economies  </a></h4>
+                           <!--<div class="text">The world has become increasingly interconnected in recent years, and this has resulted in more and more people moving from their home countries to other parts of the world.</div>-->
+                           <ul class="post-info">
+                              <li><span class="far fa-calendar"></span> 21/08/2021</li>
+                              <li><span class="far fa-comments"></span> 02 Comments</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                                 </div>
+               <div class="sec-bottom-text">
+                  <div class="text">if you want to more Updates <a href="#">click here</a> now.</div>
+               </div>
+            </div>
+         </section>
+         <!--Clients Section-->
+         <section class="clients-section">
+            <div class="auto-container">
+               <div class="row">
+                  <!-- Title Column -->
+                  <div class="title-column col-xl-3 col-lg-4 col-md-12">
+                     <div class="sec-title">
+                        <span class="sub-title">Partners</span>
+                        <h2>Our Official <br>Partners</h2>
+                        <div class="divider"></div>
+                        <div class="text">We Collaborate with several partners and sponsors to achieve all our objectives</div>
+                        <a href="https://prices.ugandakwekwaffe.com/" class="theme-btn btn-style-one mt-4"><span class="btn-title">Buy Ticket</span></a>
+                     </div>
+                  </div>
+                  <!-- Title Column -->
+                  <div class="title-column col-xl-9 col-lg-8 col-md-12">
+                     <div class="sponsors-outer">
+                        <div class="row">
+                                                      <!-- Client Block -->
+                           <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                              <figure class="image-box"><a href="#"><img src="./gallery/Meta%20-%20Copy.jpg" alt=""></a></figure>
+                           </div>
+                                                      <!-- Client Block -->
+                           <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                              <figure class="image-box"><a href="#"><img src="./gallery/045115d7e843ffdaf8f113da5e21cf9f%20(1).jpg" alt=""></a></figure>
+                           </div>
+                                                      <!-- Client Block -->
+                           <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                              <figure class="image-box"><a href="#"><img src="./gallery/WhatsApp%20Image%202024-02-23%20at%2015.59.37_7d0d50ff.jpg" alt=""></a></figure>
+                           </div>
+                                                   </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--End Clients Section-->
+<!--body content end--> 
+
+
+
+
+  <!--whatsapp major-
+<div class="whatsapp-container">
+     
+    <div class="whatsapp-home-icon" id="whatsapp-home-icon">
+                    <i class="fab fa-whatsapp"></i>
+        <span>
+        </span>
+    </div>
+
+    <div id="whatsapp-popup">
+        <div class="chat-header">
+            <div style="display: flex; align-items: center;">
+                <img src="./gallery/cnx.png" alt="Profile Picture"> 
+                <span>Support Center</span>
+            </div>
+                    <i class="fab fa-whatsapp" style="color:#25D366;font-size:20px"></i>
+            <span class="status"><span style="color:cyan">°</span>&nbsp;Online</span>
+            
+            <span class="close-popup" id="close-popup">&times;</span>
+        </div>
+        <div class="chat-messages" id="chat-messages" style="background-image: url(./gallery);">
+            <div class="message received">
+                <img src="./gallery/cnx.png" alt="Avatar">
+                <div class="message-bubble typing" id="typing-effect">
+                    "Hi dear! Thank you for reaching out. Please share your thoughts or inquiries, and I’ll assist you with in a while..."
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <i class="fa fa-smile emoji-icon" id="emoji-icon"></i>
+            <input id="message-input" type="text" placeholder="Type a message...">
+            <button id="send-button">Send</button>
+        </div>
+        <div class="emoji-popup" id="emoji-popup">
+            <span>😊</span>
+            <span>❤️</span>
+            <span>👍</span>
+        </div>
+    </div>
+</div>
+    </div>
+     
+      </div>
+    </div>
+
+    </div>
+            
+         
+    </section> -->
+
+         <!-- Subscribe Section Two -->
+         <section class="subscribe-section-two">
+            <div class="auto-container">
+               <div class="content-box">
+                  <div class="sec-title text-center light">
+                     <span class="sub-title">Get The Latest Updates</span>
+                     <h2>Signup For Newsletter</h2>
+                     <div class="divider"></div>
+                  </div>
+                  <div class="newsletter-form-two">
+                     <form id="subscribe">
+                        <div class="form-group">
+                           <input type="email" name="email" value="" placeholder="Signup For Newsletter" required="">
+                           <button type="submit" class="theme-btn btn-style-two"><span class="btn-title">Subscribe</span></button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="text">If You Want to Update For on Our Site a#<a href="#">Subscribe</a> Now.</div>
+               </div>
+            </div>
+         </section>
+         <!--End Subscribe Section Two -->
+
+         <!-- Main Footer -->
+         <footer class="main-footer">
+            <div class="auto-container">
+               <!-- Footer Content -->
+               <div class="footer-content wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="text-center">
+                     <div class="footer-logo"><a href="#"><img src="./gallery/divider-centered.png" alt=""></a></div>
+                     <div class="text">Discover the Vibrant Fusion of Cultures at the Edmonton Heritage Festival - One of Canada's Largest Multicultural Events! Join us every August as we celebrate over 100 pavilions showcasing diverse cultural traditions, art, music, and cuisine. Inspired by the success of the first forum in Toronto, hosted by Uganda Culture in 2018, we now bring you the 8th Uganda kwe kwaffe Diaspora Canadian Business and Cultural Forum. Be part of this annual event that fosters cultural exchange and brings together thousands of Diaspora Canadians to give back to society and celebrate our shared heritage.</div>
+                  </div>
+                  <ul class="social-icon-two">
+                     <li><a href="https://www.facebook.com/profile.php?id=100092477606472"><span class="fab fa-facebook-f"></span></a></li>
+                     <li><a href="https://www.instagram.com/in/raridali"><span class="fab fa-instagram"></span></a></li>
+                     <li><a href="https://twitter.com/Kwe_Kwaffe"><span class="fab fa-twitter"></span></a></li>
+                     <li><a href="https://www.linkedin.com/in/uganda-kwe-kwaffe-6982b2279/"><span class="fab fa-linkedin"></span></a></li>
+                  </ul>
+
+               <style>
+  .contact-list-one {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .contact-list-one li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .contact-list-one img {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: sepia(1) hue-rotate(20deg) saturate(6); /* Gold tint */
+  }
+
+  .contact-list-one img:hover {
+    transform: scale(1.2);
+    filter: sepia(1) hue-rotate(20deg) saturate(8) brightness(1.2);
+  }
+
+  .contact-list-one strong {
+    margin-left: 8px;
+    color: goldenrod;
+  }
+
+  .contact-list-one a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .contact-list-one a:hover {
+    text-decoration: underline;
+    color: goldenrod;
+  }
+
+  @media (min-width: 600px) {
+    .contact-list-one li {
+      font-size: 1.1rem;
+    }
+
+    .contact-list-one img {
+      width: 32px;
+      height: 32px;
+      
+    }
+  }
+</style>
+
+<ul class="contact-list-one">
+  <li>
+    <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location Icon" />
+    15015 106 Ave NW Edmonton AB T5P 4J1&nbsp;Canada <strong>Address</strong>
+  </li>
+  <li>
+    <img src="https://img.icons8.com/ios-filled/50/000000/alarm-clock.png" alt="Alarm Clock Icon" />
+    Monday - Saturday: 8.00am To 5.00pm <strong>Timing</strong>
+  </li>
+  <li>
+    <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email Icon" />
+    <a href="mailto:info@ugandakwekwaffe.com">info@ugandakwekwaffe.com</a> <strong>Mail to us</strong>
+  </li>
+</ul>
+
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <div class="auto-container">
+                  <div class="inner-container">
+                     <ul class="footer-nav">
+                        <li><a href="#">Powered By</a></li>
+                        <li style="list-style:none;"><a target="_blank" href="https://etech.togethertosave.com">E-TECH Company LTD</a></li>
+                     </ul>
+                     <div class="copyright-text">
+                        <p>Copyright © 2026 All Rights Reserved by <a href="#">Uganda Kwe Kwaffe</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- End Footer -->
+
+             
+         
+      </div>
+      <!-- End Page Wrapper -->
+      <!--Scroll to top-->
+      <div class="scroll-to-top scroll-to-target" data-target="html" style="display: none;"><span class="fa fa-angle-up"></span><img src="./gallery/totop.png" alt="" width="30" ></div>
+      <!-- Color Palate -->
+    
+      <!-- End Color Switcher -->
+      
+
+
+
+  <!-- Animation Script -->
+  <script>
+    const slides = document.querySelectorAll('.kwekwaffe-slide');
+    const titleEl = document.getElementById('kwekwaffe-title');
+    const subEl = document.getElementById('kwekwaffe-sub');
+    const iconLayer = document.getElementById('kwekwaffe-animated-icons');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => s.classList.toggle('active', i === index));
+      const slide = slides[index];
+      titleEl.textContent = slide.dataset.title;
+      subEl.textContent = slide.dataset.sub;
+
+      anime({
+        targets: titleEl,
+        opacity: [0, 1],
+        scale: [0.9, 1],
+        duration: 1000,
+        easing: 'easeOutBack'
+      });
+
+      anime({
+        targets: subEl,
+        opacity: [0, 1],
+        translateY: [20, 0],
+        delay: 500,
+        duration: 1000,
+        easing: 'easeOutExpo'
+      });
+
+      iconLayer.innerHTML = '';
+      const icon = document.createElement('img');
+      icon.src = `./gallery/object-7.png?text=${index+1}`;
+      icon.style.position = 'absolute';
+      icon.style.top = `${30 + index * 15}%`;
+      icon.style.left = `${20 + index * 25}%`;
+      icon.style.width = '40px';
+      icon.style.opacity = '0.5';
+      iconLayer.appendChild(icon);
+
+      anime({
+        targets: icon,
+        translateY: [-20, 20],
+        loop: true,
+        direction: 'alternate',
+        easing: 'easeInOutSine',
+        duration: 3000
+      });
+    }
+
+    showSlide(current);
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 6000);
+
+
+
+     $('#subscribe').on('submit',function(e){
+      // alert('me');
+      e.preventDefault();
+      $.ajax({
+         url: request()+'?f=subscribers&s=new',
+         method: 'POST',
+         contentType: false,
+         processData: false,
+         data: new FormData(this),
+         success : function(response){
+            console.log(response);
+            if (response.status == 200) {
+                 iziToast.info({
+                   title: 'Success',
+                   message: response.message,
+                   position: 'topRight'
+               });
+               setTimeout(function(){
+                 window.location.href = response.url;
+               },1000);
+            }else{
+               iziToast.error({
+                   title: 'Error',
+                   message: response.message,
+                   position: 'topRight'
+               });
+            }
+         }
+      })
+   });
+
+
+    const menuBtn = document.querySelector('.menu-btn');
+  const navBar = document.querySelector('.nav-links');
+  menuBtn.addEventListener('click', ()=>{
+  navBar.classList.toggle('mobile-menu')})
+
+   /*/ Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Validate reCAPTCHA
+            const response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                alert('Please complete the reCAPTCHA');
+                return;
+            }
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to your server
+            // For demo purposes, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been received. We'll contact you soon at ${email} or ${phone}.`);
+            
+            // Reset form
+            contactForm.reset();
+            grecaptcha.reset();
+        });
+        
+        // Shopping Form Submissions
+        document.getElementById('pianoForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for booking piano lessons! We will contact you shortly to confirm your schedule.');
+            shoppingModal.classList.remove('active');
+        });
+        
+        document.getElementById('beltForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your order! We will contact you shortly to confirm delivery details.');
+            shoppingModal.classList.remove('active');
+        });
+        
+        // Animate elements when they come into view
+        const animateElements = document.querySelectorAll('.animate, .animate-up');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        animateElements.forEach(element => {
+            element.style.opacity = 0;
+            if (element.classList.contains('animate-up')) {
+                element.style.transform = 'translateY(50px)';
+            }
+            observer.observe(element);
+        });
+         // Email Submission Function
+        function sendEmail() {
+            const name = document.getElementById("contact-name").value;
+            const email = document.getElementById("contact-email").value;
+            const message = document.getElementById("contact-message").value;
+
+            // Create email content
+            const subject = encodeURIComponent("UGANDA CULTURE IN DIASPORA @ www.ugandakwekwaffe.com/");
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+            // Send email using mailto
+            window.open(`mailto:info@ugandakwekwaffe.com?subject=${subject}&body=${body}`);
+        }
+
+        // SMS Submission Function
+        function sendSMS() {
+            const name = document.getElementById("contact-name").value;
+            const phone = document.getElementById("contact-phone").value;
+            const message = document.getElementById("contact-message").value;
+
+            // Create SMS content
+            const smsBody = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nMessage: ${message}`);
+
+            // Open SMS app
+            window.open(`sms:+15879881614?body=${smsBody}`);
+        }
+        
+        */
+
+  </script>
+   
+</body>
+</html>
